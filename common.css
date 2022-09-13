@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+.main_title {
+    background-color: rgba(33,150,243,255);
+    color: white;
+    width: 100%;
+}
+header h1 {
+    padding-left: 15px;
+}
+section {
+    width: 100%;
+}
+footer {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.footer_label {
+    background-color: rgba(33,150,243,255);
+    color: white;
+    position: fixed;
+    bottom: 0;
+    padding-left: 10px;
+    width: 100%;
+}

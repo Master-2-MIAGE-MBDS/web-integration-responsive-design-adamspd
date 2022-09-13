@@ -1,0 +1,93 @@
+body {
+    background-color: rgba(243, 240, 240, 0.84);
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto 1fr;
+    width: 100%;
+    justify-items: center;
+}
+.card_body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.section_tab {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    justify-items: center;
+}
+.tab_active {
+    background-color: rgba(33, 150, 243, 0.92);
+    width: 50%;
+}
+.tab_inactive {
+    background-color: rgba(33,150,243,255);
+    width: 50%;
+}
+.section_tab p {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+.section_card_body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
+    background-color: white;
+    margin: 10px;
+}
+.card_description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 5px;
+    margin-right: 7px;
+}
+.card_title {
+    font-weight: bold;
+    margin-top: 5px;
+}
+.card_description_label, .posted_when{
+    color: rgba(73, 73, 73, 0.91);
+    font-weight: 350;
+}
+.posted_when {
+    font-size: small;
+}
+.price {
+    font-weight: bold;
+}
+.posted_when_and_price {
+    margin-bottom: 2px;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 700px) {
+    .card_body {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .card_img {
+
+    }
+    .section_card_body {
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .card_description {
+        display: flex;
+        flex-flow: column wrap;
+        margin-top: 10px;
+    }
+    .posted_when_and_price {
+        margin-bottom: 2px;
+        margin-top: 120px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
